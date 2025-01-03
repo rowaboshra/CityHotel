@@ -74,3 +74,8 @@ This box plot provides insights into the relationship between room type, ADR, an
 ## Results and Outputs:
 The analysis outputs several visualizations and insights, including the box plot showing the relationship between room types, ADR, and hotel types. These results will guide the formulation of strategies to reduce cancellations and increase revenue.
 
+## Dataset
+
+https://www.kaggle.com/datasets/mojtaba142/hotel-booking
+
+
