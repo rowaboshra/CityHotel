@@ -17,6 +17,39 @@ This project uses data analysis techniques to explore the relationship between v
 
 - **Policy Adjustment:** A high number of cancellations may be attributed to lenient no-deposit policies.
   - **Solution:** Introduce stricter cancellation and deposit policies, such as higher withdrawal fees or non-refundable deposits, to decrease cancellations.
+ 
+## Cleaning Data
+Here’s a description for your GitHub README that outlines the data cleaning process:
+
+---
+
+## Data Cleaning Process
+
+This project involves cleaning a dataset to ensure it is ready for analysis. Below are the steps taken to clean the data:
+
+### 1. Identifying Missing Values
+We start by checking the dataset for any missing values (NaN) using `df.isnull().sum()`. This allows us to see which columns contain missing data and how many values are missing in each column.
+
+### 2. Dropping Unnecessary Columns
+In this step, we remove the columns that are not required for analysis. For example, the `company` and `agent` columns were dropped using:
+```python
+df.drop(['company', 'agent'], axis=1, inplace=True)
+```
+
+### 3. Handling Missing Data
+For columns with missing values, we decided to remove rows containing any missing values (NaN) to ensure the dataset only includes complete rows. This was done using:
+```python
+df.dropna(inplace=True)
+```
+This step ensures that there are no missing values left in the dataset, making it suitable for analysis.
+
+### 4. Rechecking for Missing Values
+After cleaning, we rechecked the dataset for any remaining missing values with:
+```python
+df.isnull().sum()
+```
+This step confirms that the dataset is now free from missing values and is ready for further analysis.
+
 
 ## Data Analysis and Findings
 
